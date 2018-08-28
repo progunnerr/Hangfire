@@ -147,7 +147,7 @@ namespace Hangfire.Dashboard
             results.Add(item);
         }
 
-        internal class Item
+        public class Item
         {
             public Item(int pageIndex, bool disabled, ItemType type)
             {
@@ -161,7 +161,7 @@ namespace Hangfire.Dashboard
             public ItemType Type { get; }
         }
 
-        internal enum ItemType
+        public enum ItemType
         {
             Page,
             PrevPage,
